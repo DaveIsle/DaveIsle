@@ -352,9 +352,14 @@ C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\A
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Automation.runtimeconfig.json
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Automation.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Automation.pdb
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\CucumberExpressions.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Cucumber.HtmlFormatter.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Cucumber.Messages.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Gherkin.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Microsoft.ApplicationInsights.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Microsoft.Playwright.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Microsoft.Playwright.NUnit.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Microsoft.Playwright.TestAdapter.dll
@@ -363,6 +368,7 @@ C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\M
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Microsoft.Testing.Extensions.VSTestBridge.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Microsoft.Testing.Platform.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Microsoft.Testing.Extensions.MSBuild.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Microsoft.TestPlatform.AdapterUtilities.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Microsoft.TestPlatform.CoreUtilities.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
@@ -373,6 +379,8 @@ C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\M
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Newtonsoft.Json.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\nunit.framework.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\nunit.framework.legacy.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Reqnroll.Utils.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Reqnroll.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\cs\Microsoft.Testing.Extensions.Telemetry.resources.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\de\Microsoft.Testing.Extensions.Telemetry.resources.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\es\Microsoft.Testing.Extensions.Telemetry.resources.dll
@@ -425,6 +433,19 @@ C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\r
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\tr\Microsoft.Testing.Extensions.MSBuild.resources.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\zh-Hans\Microsoft.Testing.Extensions.MSBuild.resources.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\zh-Hant\Microsoft.Testing.Extensions.MSBuild.resources.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\cs\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\de\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\es\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\fr\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\it\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\ja\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\ko\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\pl\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\pt-BR\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\ru\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\tr\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\zh-Hans\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\zh-Hant\Microsoft.TestPlatform.AdapterUtilities.resources.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
@@ -492,6 +513,8 @@ C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\z
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\Automation.csproj.AssemblyReference.cache
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\Automation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\Automation.gentestingplatformentrypointinputcache.cache
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\Automation.genautoregisteredextensionsinputcache.cache
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\Automation.AssemblyInfoInputs.cache
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\Automation.AssemblyInfo.cs
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\Automation.csproj.CoreCompileInputs.cache
@@ -502,3 +525,4 @@ C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\r
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\Automation.pdb
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\Automation.genruntimeconfig.cache
 C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\ref\Automation.dll
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\bin\Debug\net10.0\Reqnroll.NUnit.ReqnrollPlugin.dll
