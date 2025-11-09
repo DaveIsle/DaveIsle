@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ayAupnhH3Ys=",
+  "dgSpecHash": "8hjTe4ZuzO0=",
   "success": true,
   "projectFilePath": "C:\\Users\\dji20\\source\\repos\\DaveIsle\\DaveIsle\\All\\Automation\\Automation.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,7 @@
     "C:\\Users\\dji20\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\dji20\\.nuget\\packages\\microsoft.codecoverage\\17.14.0\\microsoft.codecoverage.17.14.0.nupkg.sha512",
     "C:\\Users\\dji20\\.nuget\\packages\\microsoft.net.test.sdk\\17.14.0\\microsoft.net.test.sdk.17.14.0.nupkg.sha512",
-    "C:\\Users\\dji20\\.nuget\\packages\\microsoft.playwright\\1.52.0\\microsoft.playwright.1.52.0.nupkg.sha512",
+    "C:\\Users\\dji20\\.nuget\\packages\\microsoft.playwright\\1.55.0\\microsoft.playwright.1.55.0.nupkg.sha512",
     "C:\\Users\\dji20\\.nuget\\packages\\microsoft.playwright.nunit\\1.52.0\\microsoft.playwright.nunit.1.52.0.nupkg.sha512",
     "C:\\Users\\dji20\\.nuget\\packages\\microsoft.playwright.testadapter\\1.52.0\\microsoft.playwright.testadapter.1.52.0.nupkg.sha512",
     "C:\\Users\\dji20\\.nuget\\packages\\microsoft.testing.extensions.telemetry\\1.5.3\\microsoft.testing.extensions.telemetry.1.5.3.nupkg.sha512",
