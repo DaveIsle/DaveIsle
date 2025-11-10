@@ -12,9 +12,8 @@ namespace Automation.Steps
     {
         [Given("I navigate to the login page")]
         public async Task GivenINavigateToTheLoginPage()
-        {
+         {
             await Hooks.Page!.GotoAsync("https://www.google.com/");
-
         }
     }
 }
