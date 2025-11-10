@@ -17,7 +17,7 @@ namespace Automation
         public static async Task Setup()
         {
             PlaywrightInstance = await Playwright.CreateAsync();
-            Browser = await PlaywrightInstance.Chromium.LaunchAsync(new() { Headless = false });
+            Browser = await PlaywrightInstance.Chromium.LaunchAsync(new() { Headless = true });
             Page = await Browser.NewPageAsync();
         }
 
