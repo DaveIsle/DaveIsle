@@ -31,6 +31,12 @@ steps:
 - script: dotnet build All/Automation/Automation.csproj --configuration Release
   displayName: 'Build Automation project'
 
+# Install .NET tools
+- script: |
+    cd All/Automation
+    dotnet tool restore
+  displayName: 'Restore .NET tools'
+
 # Cache .NET tools (after restore so folder exists)
 - task: Cache@2
   inputs:
@@ -38,19 +44,18 @@ steps:
     path: All/Automation/.config
   displayName: 'Cache dotnet tools'
 
-# Cache Playwright browsers
+# Install Playwright browsers
+- script: |
+    cd All/Automation
+    dotnet tool run playwright install --with-deps
+  displayName: 'Install Playwright Browsers'
+
+# Cache Playwright browsers (after installation)
 - task: Cache@2
   inputs:
     key: 'playwright-browsers | "$(Agent.OS)"'
     path: $(UserProfile)/AppData/Local/ms-playwright
   displayName: 'Cache Playwright Browsers'
-
-# Install .NET tools and Playwright browsers
-- script: |
-    cd All/Automation
-    dotnet tool restore
-    dotnet tool run playwright install --with-deps
-  displayName: 'Install Playwright Browsers'
 
 # Run tests in Automation project
 - script: |
