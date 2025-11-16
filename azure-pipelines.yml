@@ -1,5 +1,7 @@
 ﻿trigger:
-  - Automation  # or your branch
+  branches:
+    include:
+      - Automation
 
 pool:
   vmImage: 'windows-latest'
@@ -10,13 +12,13 @@ steps:
 - task: UseDotNet@2
   inputs:
     packageType: 'sdk'
-    version: '8.x'
+    version: '10.0.100-rc.2.25502.107'
 
 - script: dotnet tool restore
   displayName: 'Restore dotnet tools'
 
 - script: dotnet tool run playwright install --with-deps
-  displayName: 'Install Playwright browsers'
+  displayName: 'Install Playwright Browsers'
 
 - script: dotnet restore
   displayName: 'Dotnet restore'
@@ -24,9 +26,7 @@ steps:
 - script: dotnet build --configuration Release --no-restore
   displayName: 'Build'
 
-- script: |
-    dotnet test tests/Your.Tests.Project.csproj --configuration Release --no-build \
-      --logger "trx;LogFileName=TestResults.trx" --results-directory $(Build.ArtifactStagingDirectory)/test-results
+- script: dotnet test **/*Tests.csproj --configuration Release --no-build --logger "trx;LogFileName=TestResults.trx" --results-directory $(Build.ArtifactStagingDirectory)/test-results
   displayName: 'Run tests'
 
 - task: PublishTestResults@2
