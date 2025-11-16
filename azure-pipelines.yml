@@ -23,41 +23,41 @@ steps:
     path: ~/.nuget/packages
   displayName: 'Cache NuGet packages'
 
-# Restore NuGet packages for Automation project
-- script: dotnet restore All/Automation/Automation.csproj
-  displayName: 'Restore Automation project'
-
-# Build Automation project
-- script: dotnet build All/Automation/Automation.csproj --configuration Release
-  displayName: 'Build Automation project'
-
-# Install .NET tools
-- script: |
-    cd All/Automation
-    dotnet tool restore
-  displayName: 'Restore .NET tools'
-
-# Cache .NET tools (after restore so folder exists)
+# Cache .NET tools (before restore)
 - task: Cache@2
   inputs:
     key: 'dotnet-tools | "$(Agent.OS)" | AutomationTools'
-    path: All/Automation/.config
-  displayName: 'Cache dotnet tools'
+    path: $(Pipeline.Workspace)/All/Automation/.config
+  displayName: 'Cache .NET tools'
 
-# Install Playwright browsers
-- script: |
-    cd All/Automation
-    dotnet tool run playwright install --with-deps
-  displayName: 'Install Playwright Browsers'
-
-# Cache Playwright browsers (after installation)
+# Cache Playwright browsers
 - task: Cache@2
   inputs:
     key: 'playwright-browsers | "$(Agent.OS)"'
     path: $(UserProfile)/AppData/Local/ms-playwright
   displayName: 'Cache Playwright Browsers'
 
-# Run tests in Automation project
+# Restore NuGet packages
+- script: dotnet restore All/Automation/Automation.csproj
+  displayName: 'Restore Automation project'
+
+# Restore .NET tools
+- script: |
+    cd All/Automation
+    dotnet tool restore
+  displayName: 'Restore .NET tools'
+
+# Install Playwright browsers (only if not cached)
+- script: |
+    cd All/Automation
+    dotnet tool run playwright install --with-deps
+  displayName: 'Install Playwright Browsers'
+
+# Build Automation project
+- script: dotnet build All/Automation/Automation.csproj --configuration Release
+  displayName: 'Build Automation project'
+
+# Run tests
 - script: |
     cd All/Automation
     dotnet test Automation.csproj --configuration Release --no-build --logger "trx;LogFileName=TestResults.trx" --results-directory $(Build.ArtifactStagingDirectory)/test-results
