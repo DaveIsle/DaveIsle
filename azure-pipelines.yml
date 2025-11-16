@@ -17,7 +17,7 @@ steps:
 # Cache NuGet packages
 - task: Cache@2
   inputs:
-    key: 'nuget | "$(Agent.OS)" | All/All.sln'
+    key: 'nuget | "$(Agent.OS)" | AllSolution'
     restoreKeys: |
       nuget | "$(Agent.OS)"
     path: ~/.nuget/packages
@@ -26,7 +26,7 @@ steps:
 # Cache .NET tools
 - task: Cache@2
   inputs:
-    key: 'dotnet-tools | "$(Agent.OS)" | All/Automation/dotnet-tools.json'
+    key: 'dotnet-tools | "$(Agent.OS)" | AutomationTools'
     path: All/Automation/.config
   displayName: 'Cache dotnet tools'
 
