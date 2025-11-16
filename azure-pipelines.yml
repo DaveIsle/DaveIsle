@@ -20,16 +20,18 @@ steps:
 - script: |
     cd All/Automation
     dotnet tool restore
-    dotnet tool run playwright install --with-deps
-  displayName: 'Install Playwright Browsers'
+    dotnet tool run playwright install --with-deps --browser=chromium
+  displayName: 'Install Chromium only'
 
-- script: dotnet restore
+- script: |
+    cd All  
+    dotnet restore
   displayName: 'Dotnet restore'
 
-- script: dotnet build --configuration Release --no-restore
+- script: dotnet build All.sln --configuration Release
   displayName: 'Build'
 
-- script: dotnet test **/*Tests.csproj --configuration Release --no-build --logger "trx;LogFileName=TestResults.trx" --results-directory $(Build.ArtifactStagingDirectory)/test-results
+- script: dotnet test All/Automation/Automation.csproj --configuration Release --no-build --logger "trx;LogFileName=TestResults.trx" --results-directory $(Build.ArtifactStagingDirectory)/test-results
   displayName: 'Run tests'
 
 - task: PublishTestResults@2
