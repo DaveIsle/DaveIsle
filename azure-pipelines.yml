@@ -17,7 +17,7 @@ steps:
 - script: dotnet tool restore
   displayName: 'Restore dotnet tools'
 
-- script: dotnet tool run playwright install --with-deps
+- script: dotnet tool run playwright install --with-deps -p ./All/Automation
   displayName: 'Install Playwright Browsers'
 
 - script: dotnet restore
