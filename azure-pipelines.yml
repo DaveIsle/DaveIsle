@@ -23,13 +23,6 @@ steps:
     path: ~/.nuget/packages
   displayName: 'Cache NuGet packages'
 
-# Cache .NET tools
-- task: Cache@2
-  inputs:
-    key: 'dotnet-tools | "$(Agent.OS)" | AutomationTools'
-    path: All/Automation/.config
-  displayName: 'Cache dotnet tools'
-
 # Restore NuGet packages for Automation project
 - script: dotnet restore All/Automation/Automation.csproj
   displayName: 'Restore Automation project'
@@ -38,12 +31,19 @@ steps:
 - script: dotnet build All/Automation/Automation.csproj --configuration Release
   displayName: 'Build Automation project'
 
-# Install Playwright Browsers for Automation project
+# Install .NET tools and Playwright browsers
 - script: |
     cd All/Automation
     dotnet tool restore
     dotnet tool run playwright install --with-deps
   displayName: 'Install Playwright Browsers'
+
+# Cache .NET tools (after restore so folder exists)
+- task: Cache@2
+  inputs:
+    key: 'dotnet-tools | "$(Agent.OS)" | AutomationTools'
+    path: All/Automation/.config
+  displayName: 'Cache dotnet tools'
 
 # Run tests in Automation project
 - script: |
