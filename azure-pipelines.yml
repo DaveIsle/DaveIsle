@@ -14,26 +14,44 @@ steps:
     packageType: 'sdk'
     version: '10.0.100-rc.2.25502.107'
 
-- script: dotnet tool restore
-  displayName: 'Restore dotnet tools'
+# Cache NuGet packages
+- task: Cache@2
+  inputs:
+    key: 'nuget | "$(Agent.OS)" | **/packages.lock.json'
+    restoreKeys: |
+      nuget | "$(Agent.OS)"
+    path: ~/.nuget/packages
+  displayName: 'Cache NuGet packages'
 
+# Cache .NET tools
+- task: Cache@2
+  inputs:
+    key: 'dotnet-tools | "$(Agent.OS)" | All/Automation/dotnet-tools.json'
+    path: All/Automation/.config
+  displayName: 'Cache dotnet tools'
+
+# Restore NuGet packages for the solution
+- script: dotnet restore All/All.sln
+  displayName: 'Restore solution'
+
+# Build the solution
+- script: dotnet build All/All.sln --configuration Release
+  displayName: 'Build solution'
+
+# Install Playwright Browsers for Automation project
 - script: |
     cd All/Automation
     dotnet tool restore
     dotnet tool run playwright install --with-deps
   displayName: 'Install Playwright Browsers'
 
+# Run tests in Automation project
 - script: |
-    cd All  
-    dotnet restore
-  displayName: 'Dotnet restore'
-
-- script: dotnet build All.sln --configuration Release
-  displayName: 'Build'
-
-- script: dotnet test All/Automation/Automation.csproj --configuration Release --no-build --logger "trx;LogFileName=TestResults.trx" --results-directory $(Build.ArtifactStagingDirectory)/test-results
+    cd All/Automation
+    dotnet test Automation.csproj --configuration Release --no-build --logger "trx;LogFileName=TestResults.trx" --results-directory $(Build.ArtifactStagingDirectory)/test-results
   displayName: 'Run tests'
 
+# Publish test results
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'VSTest'
