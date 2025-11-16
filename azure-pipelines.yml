@@ -20,8 +20,8 @@ steps:
 - script: |
     cd All/Automation
     dotnet tool restore
-    dotnet tool run playwright install --with-deps --browser=chromium
-  displayName: 'Install Chromium only'
+    dotnet tool run playwright install --with-deps
+  displayName: 'Install Playwright Browsers'
 
 - script: |
     cd All  
