@@ -30,13 +30,13 @@ steps:
     path: All/Automation/.config
   displayName: 'Cache dotnet tools'
 
-# Restore NuGet packages for the solution
-- script: dotnet restore All/All.sln
-  displayName: 'Restore solution'
+# Restore NuGet packages for Automation project
+- script: dotnet restore All/Automation/Automation.csproj
+  displayName: 'Restore Automation project'
 
-# Build the solution
-- script: dotnet build All/All.sln --configuration Release
-  displayName: 'Build solution'
+# Build Automation project
+- script: dotnet build All/Automation/Automation.csproj --configuration Release
+  displayName: 'Build Automation project'
 
 # Install Playwright Browsers for Automation project
 - script: |
