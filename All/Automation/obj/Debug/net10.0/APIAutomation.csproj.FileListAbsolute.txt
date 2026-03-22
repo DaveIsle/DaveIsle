@@ -1,0 +1,8 @@
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\APIAutomation.csproj.AssemblyReference.cache
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\APIAutomation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\APIAutomation.gentestingplatformentrypointinputcache.cache
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\APIAutomation.genautoregisteredextensionsinputcache.cache
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\APIAutomation.AssemblyInfoInputs.cache
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\APIAutomation.AssemblyInfo.cs
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\APIAutomation.csproj.CoreCompileInputs.cache
+C:\Users\dji20\source\repos\DaveIsle\DaveIsle\All\Automation\obj\Debug\net10.0\APIAutomation.sourcelink.json

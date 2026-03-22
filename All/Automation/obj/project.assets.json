@@ -2624,7 +2624,6 @@
       "NUnit >= 4.3.2",
       "NUnit.Analyzers >= 4.7.0",
       "NUnit3TestAdapter >= 5.2.0",
-      "Reqnroll >= 3.2.1",
       "Reqnroll.NUnit >= 3.2.1",
       "Reqnroll.Tools.MsBuild.Generation >= 3.2.1",
       "coverlet.collector >= 6.0.4"
@@ -2637,9 +2636,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dji20\\source\\repos\\DaveIsle\\DaveIsle\\All\\Automation\\Automation.csproj",
-      "projectName": "Automation",
-      "projectPath": "C:\\Users\\dji20\\source\\repos\\DaveIsle\\DaveIsle\\All\\Automation\\Automation.csproj",
+      "projectUniqueName": "C:\\Users\\dji20\\source\\repos\\DaveIsle\\DaveIsle\\All\\Automation\\APIAutomation.csproj",
+      "projectName": "APIAutomation",
+      "projectPath": "C:\\Users\\dji20\\source\\repos\\DaveIsle\\DaveIsle\\All\\Automation\\APIAutomation.csproj",
       "packagesPath": "C:\\Users\\dji20\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\dji20\\source\\repos\\DaveIsle\\DaveIsle\\All\\Automation\\obj\\",
       "projectStyle": "PackageReference",
@@ -2674,7 +2673,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net10.0": {
@@ -2703,10 +2702,6 @@
           "NUnit3TestAdapter": {
             "target": "Package",
             "version": "[5.2.0, )"
-          },
-          "Reqnroll": {
-            "target": "Package",
-            "version": "[3.2.1, )"
           },
           "Reqnroll.NUnit": {
             "target": "Package",
@@ -2738,7 +2733,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

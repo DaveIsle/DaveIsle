@@ -1,3 +1,4 @@
 <Solution>
-  <Project Path="Automation/Automation.csproj" />
+  <Project Path="Automation/APIAutomation.csproj" />
+  <Project Path="UIAutomation/UIAutomation.csproj" Id="62c73957-bac0-4437-97ca-0c3324d18643" />
 </Solution>

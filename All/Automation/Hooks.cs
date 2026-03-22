@@ -1,31 +1,31 @@
 ﻿using Microsoft.Playwright;
-using Reqnroll;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Automation
+public class Hooks
 {
-    [Binding]
-    public class Hooks
+    private static IPlaywright _playwright = null!;
+    private IAPIRequestContext _apiRequest = null!;
+
+    [OneTimeSetUp]
+    public async Task BeforeAllTestsRun()
     {
-        public static IPlaywright? PlaywrightInstance;
-        public static IBrowser? Browser;
-        public static IPage? Page;
+        _playwright = await Playwright.CreateAsync();
+    }
 
-        [BeforeScenario]
-        public static async Task Setup()
-        {
-            PlaywrightInstance = await Playwright.CreateAsync();
-            Browser = await PlaywrightInstance.Chromium.LaunchAsync(new() { Headless = true });
-            Page = await Browser.NewPageAsync();
-        }
+    [OneTimeTearDown]
+    public async Task AfterAllTestsRun()
+    {
+        _playwright?.Dispose();
+    }
 
-        [AfterScenario]
-        public static async Task TearDown()
-        {
-            await Browser.CloseAsync();
-            PlaywrightInstance?.Dispose();
-        }
+    [SetUp]
+    public async Task BeforeEachTest()
+    {
+        _apiRequest = await _playwright.APIRequest.NewContextAsync();
+    }
+
+    [TearDown]
+    public async Task AfterEachTest()
+    {
+        await _apiRequest.DisposeAsync();
     }
 }

@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 [GeneratedCode("Reqnroll", "3.2.1")]
 [global::NUnit.Framework.SetUpFixture]
-public static class Automation_NUnitAssemblyHooks
+public static class APIAutomation_NUnitAssemblyHooks
 {
     [global::NUnit.Framework.OneTimeSetUp]
     [MethodImpl(MethodImplOptions.NoInlining)]
     public static async Task AssemblyInitializeAsync()
     {
-        var currentAssembly = typeof(Automation_NUnitAssemblyHooks).Assembly;
+        var currentAssembly = typeof(APIAutomation_NUnitAssemblyHooks).Assembly;
         await global::Reqnroll.TestRunnerManager.OnTestRunStartAsync(currentAssembly);
     }
 
@@ -22,7 +22,7 @@ public static class Automation_NUnitAssemblyHooks
     [MethodImpl(MethodImplOptions.NoInlining)]
     public static async ValueTask AssemblyCleanupAsync()
     {
-        var currentAssembly = typeof(Automation_NUnitAssemblyHooks).Assembly;
+        var currentAssembly = typeof(APIAutomation_NUnitAssemblyHooks).Assembly;
         await global::Reqnroll.TestRunnerManager.OnTestRunEndAsync(currentAssembly);
     }
 }

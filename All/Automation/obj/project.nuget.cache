@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TO9pazcUUNk=",
+  "dgSpecHash": "7S/8thqGz3g=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dji20\\source\\repos\\DaveIsle\\DaveIsle\\All\\Automation\\Automation.csproj",
+  "projectFilePath": "C:\\Users\\dji20\\source\\repos\\DaveIsle\\DaveIsle\\All\\Automation\\APIAutomation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dji20\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
     "C:\\Users\\dji20\\.nuget\\packages\\cucumber.cucumberexpressions\\17.1.0\\cucumber.cucumberexpressions.17.1.0.nupkg.sha512",
