@@ -4,12 +4,12 @@ using System.Text.Json;
 namespace Automation.ApiTests
 {
     [TestFixture]
-    public class PostsTests
+    public class PostsTests : APIHooks
     {
         [Test]
         public async Task GetPostById_ShouldReturnPost()
         {
-            var response = await ApiRequest.GetAsync("https://jsonplaceholder.typicode.com/posts/1");
+            var response = await Context.Api.GetAsync("https://jsonplaceholder.typicode.com/posts/1");
             Assert.That(response.Status, Is.EqualTo(200));
 
             var body = await response.TextAsync();
@@ -20,7 +20,7 @@ namespace Automation.ApiTests
         [Test]
         public async Task GetPost2AndAssertID()
         {
-            var response = await ApiRequest.GetAsync("https://jsonplaceholder.typicode.com/posts/2");
+            var response = await Context.Api.GetAsync("https://jsonplaceholder.typicode.com/posts/2");
 
             Assert.That(response.Status, Is.EqualTo(200));
 
@@ -40,7 +40,7 @@ namespace Automation.ApiTests
                 userId = 1
             };
 
-            var response = await ApiRequest.PostAsync(
+            var response = await Context.Api.PostAsync(
                 "https://jsonplaceholder.typicode.com/posts",
                 new() { DataObject = data });
 
@@ -56,29 +56,6 @@ namespace Automation.ApiTests
             Assert.That((json["title"]).GetString(), Is.EqualTo("test post"));
         }
 
-        private async Task ClickButton(string button)
-        {
-            var clickable = _page!.GetByRole(AriaRole.Button, new() { Name = button, Exact = true }).First;
-            await clickable.ScrollIntoViewIfNeededAsync();
-            await clickable.ClickAsync();
-        }
 
-        private async Task FillInField(string fieldName, string fieldValue)
-        {
-            var fillable = _page!.GetByRole(AriaRole.Textbox, new() { Name = fieldName, Exact = true }).First;
-            await fillable.ScrollIntoViewIfNeededAsync();
-            await fillable.FillAsync(fieldValue);
-            await fillable.BlurAsync();
-        }
-
-        [Test]
-        public async Task basic()
-        {
-            await ClickButton("Reject non-essential cookies");
-            await ClickButton("open search");
-            await FillInField("Search", "wapple");
-            await ClickButton("Search");
-            await Assertions.Expect(_page!.Locator(":text-is(\"0 results for 'wapple'\")")).ToBeVisibleAsync();
-        }
     }
 }

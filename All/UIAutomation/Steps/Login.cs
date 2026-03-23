@@ -5,9 +5,8 @@ namespace Automation.Steps
     [Binding]
     public class LoginSteps : GlobalSteps
     {
-        public LoginSteps(UIAutomation.TestContext context) : base(context)
-        {
-        }
+        public LoginSteps(UIAutomation.TestContext context) : base(context) { }
+
 
         [Given("I navigate to the login page")]
         public async Task GivenINavigateToTheLoginPage()
